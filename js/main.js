@@ -77,6 +77,11 @@ function check() {
 
 
   function logIn(){
+    if(localStorage.getItem('login')==null){
+      // alert('Sign up first')
+      wrongEorP.classList.replace('hide','show');
+      allRequiredInputs.classList.replace('show','hide')
+    }
     for(var i=0;i<usersArray.length;i++){
         if(loginEmail.value==usersArray[i].email && loginPass.value==usersArray[i].pass){
           wrongEorP.classList.replace('show','hide');

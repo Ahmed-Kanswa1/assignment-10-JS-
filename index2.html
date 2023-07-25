@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container w-75">
+        <div class="login w-75 m-auto p-5 mt-5 text-center">
+            <h1>Smart Login System</h1>
+            <input type="text" id="signUpname" class="form-control my-3" autocomplete="off" name="username" value="" placeholder="Enter your name">
+            <input type="email"  id="signUpemail" class="form-control my-3"  autocomplete="off" name="emailName" value="" autocomplete="off" placeholder="Enter your email">
+            <input type="password" id="signUppass" class="form-control" name="pass" value="" placeholder="Enter your password" autocomplete="off">
+            <span class="text-danger mt-3 hide " id="existInput">email already exists</span>
+            <span class="text-danger mt-3 hide " id="allRequired">All inputs are required</span>
+            <span class="text-success mt-3 hide" id="notExistInput">Success</span>
+            <button onclick="signUp()" class="btn btn-outline-info my-3 w-100">Sign up</button>
+            <!-- <button onclick="checkExist()" class="btn btn-outline-info my-3 w-100">check</button> -->
+            <p class="text-white">You have an account? <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="index.html">Signin</a></p>
+        </div>
+    </div>
+
+
+    <!-- <script src="js/test.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

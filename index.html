@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container w-75">
+        <div class="login w-75 m-auto p-5 mt-5 text-center">
+            <h1>Smart Login System</h1>
+            <input type="text" id="loginEmail" autocomplete="off" class="form-control my-3" name="username" value="" placeholder="Enter your email">
+            <input autocomplete="off" id="loginPass" type="password" class="form-control" name="pass" value="" placeholder="Enter your password">
+             <span class="text-danger mt-3 hide " id="allRequired">All inputs are required</span>
+             <span class="text-danger mt-3 hide " id="wrongEorP">incorrect email or password</span>
+             <span class="text-success mt-3 hide" id="notExistInput">Success</span>
+            <a   onclick="logIn()" id="loginS" href="#" class="btn btn-outline-info my-3 w-100">Login</a>
+            <p class="text-white">Don’t have an account? <a class="link-light link-underline-opacity-0" href="index2.html">Sign Up</a></p>
+        </div>
+    </div>
+ 
+    
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
